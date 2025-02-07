@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .compare-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .item {
+            width: 45%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .item h2 {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .description {
+            text-align: justify;
+        }
+        .comparison-table {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .comparison-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Compare Two Items</h1>
+        </div>
+        <div class="compare-section">
+            <div class="item">
+                <h2>Item 1</h2>
+                <img src="item1.jpg" alt="Item 1 Image">
+                <p class="description">Description of item 1 goes here. Include details about features, benefits, and specifications.</p>
+            </div>
+            <div class="item">
+                <h2>Item 2</h2>
+                <img src="item2.jpg" alt="Item 2 Image">
+                <p class="description">Description of item 2 goes here. Include details about features, benefits, and specifications.</p>
+            </div>
+        </div>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Item 1</th>
+                    <th>Item 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Price</td>
+                    <td>$100</td>
+                    <td>$120</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>1.5 kg</td>
+                    <td>1.8 kg</td>
+                </tr>
+                <tr>
+                    <td>Warranty</td>
+                    <td>1 Year</td>
+                    <td>2 Years</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

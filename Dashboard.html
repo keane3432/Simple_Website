@@ -1,53 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozsmook Dashboard</title>
-    <style>
-        /* Basic styling */
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Ozsmook Dashboard</title>     
+    <style>         
+        /* Basic styling */         
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
-        }
-
+        }          
         nav {
             background-color: #333;
             overflow: hidden;
-        }
-
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }          
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             display: flex;
-        }
-
-        nav ul li {
-   
-        }
-
+        }          
         nav ul li a {
             display: block;
             color: white;
             text-align: center;
             padding: 28px 60px;
             text-decoration: none;
-        }
-
+        }          
         nav ul li a:hover {
             background-color: #575757;
-        }
-
-        /* Dashboard card layout */
+        }          
+        /* Dashboard card layout */         
         .dashboard-container {
             display: flex;
             justify-content: space-around;
             margin: 50px;
-        }
-
+        }          
         .card {
             background-color: white;
             width: 300px;
@@ -56,65 +47,73 @@
             padding: 20px;
             text-align: center;
             transition: transform 0.2s;
-        }
-
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }          
         .card:hover {
             transform: translateY(-5px);
-        }
-
+        }          
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }         
         .card-title {
             font-size: 24px;
-            margin-bottom: 10px;
+            margin-top: 10px;
             color: #333;
-        }
-
+        }          
         .card-description {
             color: #777;
             margin-bottom: 15px;
-        }
-
+        }          
         .card-price {
             font-size: 20px;
             font-weight: bold;
             color: #2d7a2d;
+        } 
+        
+        .Dashboard{
+            text-align: center;
+            align-content: center;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
         }
-    </style>
-</head>
-<body>
+    </style> 
+</head> 
+<body>      
+    <nav>         
+        <ul>             
+            <li><a href="Dashboard.html">Home</a></li>             
+            <li><a href="AboutUs.html">About Us</a></li>             
+            <li><a href="ContactUs.html">Contact</a></li>         
+        </ul>     
+    </nav>     
 
-    <nav>
-        <ul>
-            <li><a href="Dashboard.html">Home</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
-            <li><a href="ContactUs.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="dashboard-container">
-        <!-- Card 1 -->
-        <div class="card">
-            <div><img src="" alt="dispo pic"> </div>
-            <div class="card-title">Product A</div>
-            <div class="card-description">High-quality electronic gadget.</div>
-            <div class="card-price">&#8369;1,500.00</div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card">
-            <div><img src="" alt="dispo pic"> </div>
-            <div class="card-title">Product B</div>
-            <div class="card-description">Durable and stylish backpack.</div>
-            <div class="card-price">&#8369;900.00</div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card">
-            <div><img src="" alt="dispo pic"> </div>
-            <div class="card-title">Product C</div>
-            <div class="card-description">Eco-friendly water bottle.</div>
-            <div class="card-price">&#8369;400.00</div>
-        </div>
+    <div class = "Dashboard">
+        <h1>Dashboard</h1>
     </div>
 
-</body>
+    <div class="dashboard-container">         
+
+        <div class="card">             
+            <img src="flava.jpg" alt="dispo pic"> 
+            <div class="card-title">Flava Puffs</div>             
+            <div class="card-description">Flava Full Flavor Series.</div>             
+            <div class="card-price">&#8369;1,500.00</div>         
+        </div>          
+         
+        <div class="card">             
+            <img src="spark.jpg" alt="dispo pic"> 
+            <div class="card-title">Spark PRO Puffs</div>             
+            <div class="card-description">Spark PRO Full Flavor Series.</div>             
+            <div class="card-price">&#8369;900.00</div>         
+        </div>          
+     
+        <div class="card">             
+            <img src="cigbay.jpg" alt="dispo pic"> 
+            <div class="card-title">Cigbay Puffs</div>             
+            <div class="card-description">Cigbay Full Flavor Series.</div>             
+            <div class="card-price">&#8369;400.00</div>         
+        </div>     
+    </div>  
+</body> 
 </html>
